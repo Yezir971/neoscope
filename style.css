@@ -1,7 +1,39 @@
 /**
  * Theme Name: Blocksy Child
- * Description: Blocksy Child theme
- * Author: Creative Themes
  * Template: blocksy
+ * Author: Creative Themes
+ * Description: Blocksy Child theme
  * Text Domain: blocksy
  */
+
+
+
+
+
+.custom-btn{
+    border: solid 1px #FFC900;
+    border-radius: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.custom-btn:hover{
+    background-color: #FFC900;
+    border-color: #FFDE73;
+    color: black;
+}
+
+@media screen and (max-width:941px) {
+    .custom-btn, .custom-btn:hover{
+        color: white;
+    }
+    
+    .custom-btn:hover{
+        background-color: #FFC900;
+    }
+}
