@@ -1,5 +1,6 @@
 <?php
 
+
 if (! defined('WP_DEBUG')) {
 	die( 'Direct access forbidden.' );
 }
@@ -15,3 +16,9 @@ add_action( 'wp_enqueue_scripts', function () {
         filemtime( get_stylesheet_directory() . '/style.css')
     );
 });
+
+function add_custom_google_fonts() {
+    wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', false );
+}
+add_action( 'wp_enqueue_scripts', 'add_custom_google_fonts' );
+
