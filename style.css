@@ -7,7 +7,7 @@
  */
 
 @import url("./css/variables.css");
-
+@import url('./css/formulaire.css');
 
 .custom-btn{
     border: solid 1px #FFC900;
@@ -36,3 +36,4 @@
         background-color: #FFC900;
     }
 }
+
